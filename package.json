@@ -1,0 +1,23 @@
+{
+  "name": "charts",
+  "version": "1.0.0",
+  "description": "Dynamic Charts in ReactJs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Pramod",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.6",
+    "mongoose": "^5.9.11",
+    "nodemon": "^2.0.3",
+    "socket.io": "^2.3.0"
+  }
+}
