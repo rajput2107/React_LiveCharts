@@ -7,6 +7,8 @@ import CandleStick from './charts/CandleStick'
 import Renko from './charts/Renko';
 import MultiLineChart from './charts/MultiLineChart';
 import Stock from './charts/Stock';
+import LineDemo from './charts/LineDemo';
+
 
 
 function App() {
@@ -15,12 +17,14 @@ function App() {
       {/* <HeikinAshi /> */}
       {/* <Renko /> */}
       
-      {/* <CandleStick /> */}
+      <CandleStick />
       {/* <MultiLineChart />
       <MultiLineChart /> */}
       {/* <ReChart />*/}
-       {/* <ChartJS />  */}
-       <Stock />
+        {/* <ChartJS />   */}
+       {/* <Stock /> */}
+       <LineDemo />
+       
     </Fragment>
   );
 }
