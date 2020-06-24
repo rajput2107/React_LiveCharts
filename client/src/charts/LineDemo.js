@@ -29,8 +29,12 @@ const LineDemo = () => {
   const [Plot2_x,setPlot2_x]=useState([]);
   const [Plot2_L1,setPlot2_L1]=useState([]);
  
-
-
+  if(Plot2_L1.length > 10){
+    Plot2_L1.shift();
+  }
+  if(Plot2_x.length > 10){
+    Plot2_x.shift();
+  }
   useEffect(()=>{
  
 
@@ -51,7 +55,14 @@ const LineDemo = () => {
     const state = {
       options: {
         chart: {
-          id: "basic-bar"
+          id: "basic-bar",
+          animations: {
+            enabled: true,
+            easing: 'linear',
+            dynamicAnimation: {
+              speed: 1000
+            }
+          }
         },
         xaxis: {
          categories: Plot2_x

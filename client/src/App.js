@@ -3,11 +3,12 @@ import './App.css';
 import ReChart from './charts/reChart';
 import ChartJS from './charts/chartJS';
 import CandleStick from './charts/CandleStick'
-//import HeikinAshi from './charts/HeikinAshi';
+import HeikinAshi from './charts/HeikinAshi';
 import Renko from './charts/Renko';
 import MultiLineChart from './charts/MultiLineChart';
 import Stock from './charts/Stock';
 import LineDemo from './charts/LineDemo';
+import Dynamo from './charts/Dynamo';
 
 
 
@@ -17,13 +18,14 @@ function App() {
       {/* <HeikinAshi /> */}
       {/* <Renko /> */}
       
-      <CandleStick />
+      {/* <CandleStick /> */}
       {/* <MultiLineChart />
       <MultiLineChart /> */}
       {/* <ReChart />*/}
         {/* <ChartJS />   */}
        {/* <Stock /> */}
        <LineDemo />
+      <Dynamo />
        
     </Fragment>
   );
