@@ -11,6 +11,8 @@ const app = express();
 connectDB();
 
 
+
+
 app.use(express.json({extended: false}));
 
 app.use(function(req, res, next) {
@@ -58,6 +60,24 @@ app.use('/users',require('./routes/users'));
             socket.emit('Subplot2',data);
           }
         })
+
+        fs = require('fs')
+        fs.readFile('ADRatio.txt', 'utf8', function (err,data) {
+        if (err) {
+          return console.log(err);
+        }
+        else{
+          socket.emit('Live',data);
+          var x = new Date();
+          let minutes = x.getMinutes();
+          let Seconds = x.getSeconds();
+          let curr_time  = (minutes +":"+ Seconds)
+          socket.emit('Live_Time',curr_time);
+          console.log(curr_time);
+        }
+        
+        console.log(data);
+});
 
 
       },2000);

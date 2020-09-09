@@ -9,23 +9,24 @@ import MultiLineChart from './charts/MultiLineChart';
 import Stock from './charts/Stock';
 import LineDemo from './charts/LineDemo';
 import Dynamo from './charts/Dynamo';
-
+import Live from './charts/Live';
 
 
 function App() {
   return (
     <Fragment>
-      {/* <HeikinAshi /> */}
-      {/* <Renko /> */}
+      <HeikinAshi />
+      <Renko /> 
       
-      {/* <CandleStick /> */}
+      <CandleStick /> 
       {/* <MultiLineChart />
       <MultiLineChart /> */}
-      {/* <ReChart />*/}
-        {/* <ChartJS />   */}
-       {/* <Stock /> */}
-       <LineDemo />
+      <ReChart />
+      <ChartJS />  
+      <Stock />
+      <LineDemo />
       <Dynamo />
+      <Live />
        
     </Fragment>
   );
